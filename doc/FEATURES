@@ -1,0 +1,45 @@
+Main Features in s3.roolo
+=============================
+- can provide all the flexibility and complex querying capabilities of an RDBMS
+- acts as a repository of objects
+- each object 
+    - belongs to a "collection", 
+        - each collection 
+            - has the following "system fields"
+                - id (int)
+                - version (double)
+                - author (string)
+                - run_id (int)
+                - created_on (timestamp)
+                - updated_on (timestamp)
+            - has a predefined number of "user fields", 
+                - each with a type (1..n)
+                - user fields can be used as foreign key fields
+            - can have relationships with other collections (one-to-many, or many-to-many)
+- allow simple CRUD on all objects
+    - through an API
+    - through a GUI
+- allow simple class hierachies in each collection
+- allow SQL querying
+- allow Rails querying
+- have a simple process to add/modify their collections and fields 
+
+Version 0.1
+=============
+- We will use MySQL as the underlying database engine, although this could could be fitted onto other RDBMSs
+- We will keep the type of "fields" constrained to "int", "double", "string", and "blob" for this version
+- We will constrain the REST and QUERY interfaces' return types to "json" for this version
+- We will constrain the simple CRUD's interfaces to the API only. We will develop the GUI later on.
+- We will use Ruby on Rails and some of its standard plugins 
+    - Active Record gives us a powerful, ready-built ORM 
+    - The REST libraries released in Rails makes it very easy to create REST services and interfaces (html, json, xml...)
+    - The Migration system of changing the database as the needs of the application evolves is exactly what we need when solidifying our reusable objects
+
+
+Tasks
+=============
+- 
+
+Strategic Decisions 
+=====================
+- since a REST API makes any web-enabled device (phone, tablet, etc.) as well as other servers on the internet capable of easily communicating with the repository, we've decided to with this approach. However, it must be noted that there are no security measures in place (other than security through obscurity) to protect user-generated data. In version 0.2, we can put a token-based security system to deter data leakage. 

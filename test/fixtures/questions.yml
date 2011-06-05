@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  uid: 1
+  type: MyString
+  version: MyString
+  author: MyString
+  run_id: 1
+  image_path: MyString
+  correct_answer: MyString
+  choice_limit: MyString
+
+two:
+  id: 1
+  uid: 1
+  type: MyString
+  version: MyString
+  author: MyString
+  run_id: 1
+  image_path: MyString
+  correct_answer: MyString
+  choice_limit: MyString
