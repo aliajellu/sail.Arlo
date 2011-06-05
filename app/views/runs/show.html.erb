@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @run.id %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @run.uid %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @run.type %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @run.version %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @run.author %>
+</p>
+
+<p>
+  <b>Run:</b>
+  <%= @run.run_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_run_path(@run) %> |
+<%= link_to 'Back', runs_path %>

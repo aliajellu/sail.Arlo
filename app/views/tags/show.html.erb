@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @tag.id %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @tag.uid %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @tag.type %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @tag.version %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @tag.author %>
+</p>
+
+<p>
+  <b>Run:</b>
+  <%= @tag.run_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @tag.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_tag_path(@tag) %> |
+<%= link_to 'Back', tags_path %>

@@ -1,0 +1,25 @@
+<%= form_for(@allowed_question_tag) do |f| %>
+  <% if @allowed_question_tag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@allowed_question_tag.errors.count, "error") %> prohibited this allowed_question_tag from being saved:</h2>
+
+      <ul>
+      <% @allowed_question_tag.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :question_id %><br />
+    <%= f.text_field :question_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_id %><br />
+    <%= f.text_field :tag_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

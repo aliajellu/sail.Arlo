@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @question.id %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @question.uid %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @question.type %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @question.version %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @question.author %>
+</p>
+
+<p>
+  <b>Run:</b>
+  <%= @question.run_id %>
+</p>
+
+<p>
+  <b>Image path:</b>
+  <%= @question.image_path %>
+</p>
+
+<p>
+  <b>Correct answer:</b>
+  <%= @question.correct_answer %>
+</p>
+
+<p>
+  <b>Choice limit:</b>
+  <%= @question.choice_limit %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

@@ -1,0 +1,25 @@
+<h1>Listing answer_tags</h1>
+
+<table>
+  <tr>
+    <th>Answer</th>
+    <th>Tag</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @answer_tags.each do |answer_tag| %>
+  <tr>
+    <td><%= answer_tag.answer_id %></td>
+    <td><%= answer_tag.tag_id %></td>
+    <td><%= link_to 'Show', answer_tag %></td>
+    <td><%= link_to 'Edit', edit_answer_tag_path(answer_tag) %></td>
+    <td><%= link_to 'Destroy', answer_tag, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Answer tag', new_answer_tag_path %>

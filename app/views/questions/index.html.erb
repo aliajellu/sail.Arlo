@@ -1,0 +1,39 @@
+<h1>Listing questions</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Uid</th>
+    <th>Type</th>
+    <th>Version</th>
+    <th>Author</th>
+    <th>Run</th>
+    <th>Image path</th>
+    <th>Correct answer</th>
+    <th>Choice limit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @questions.each do |question| %>
+  <tr>
+    <td><%= question.id %></td>
+    <td><%= question.uid %></td>
+    <td><%= question.type %></td>
+    <td><%= question.version %></td>
+    <td><%= question.author %></td>
+    <td><%= question.run_id %></td>
+    <td><%= question.image_path %></td>
+    <td><%= question.correct_answer %></td>
+    <td><%= question.choice_limit %></td>
+    <td><%= link_to 'Show', question %></td>
+    <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    <td><%= link_to 'Destroy', question, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Question', new_question_path %>

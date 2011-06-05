@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @expertise.id %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @expertise.uid %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @expertise.type %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @expertise.version %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @expertise.author %>
+</p>
+
+<p>
+  <b>Run:</b>
+  <%= @expertise.run_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @expertise.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_expertise_path(@expertise) %> |
+<%= link_to 'Back', expertises_path %>

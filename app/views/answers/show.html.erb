@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @answer.id %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @answer.uid %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @answer.type %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @answer.version %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @answer.author %>
+</p>
+
+<p>
+  <b>Run:</b>
+  <%= @answer.run_id %>
+</p>
+
+<p>
+  <b>Answer:</b>
+  <%= @answer.answer %>
+</p>
+
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>

@@ -1,0 +1,33 @@
+<h1>Listing runs</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Uid</th>
+    <th>Type</th>
+    <th>Version</th>
+    <th>Author</th>
+    <th>Run</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @runs.each do |run| %>
+  <tr>
+    <td><%= run.id %></td>
+    <td><%= run.uid %></td>
+    <td><%= run.type %></td>
+    <td><%= run.version %></td>
+    <td><%= run.author %></td>
+    <td><%= run.run_id %></td>
+    <td><%= link_to 'Show', run %></td>
+    <td><%= link_to 'Edit', edit_run_path(run) %></td>
+    <td><%= link_to 'Destroy', run, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Run', new_run_path %>

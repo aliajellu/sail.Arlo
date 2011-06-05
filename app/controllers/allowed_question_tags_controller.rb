@@ -1,0 +1,2 @@
+class AllowedQuestionTagsController < ApplicationController
+end

@@ -1,0 +1,35 @@
+<h1>Listing answers</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Uid</th>
+    <th>Type</th>
+    <th>Version</th>
+    <th>Author</th>
+    <th>Run</th>
+    <th>Answer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @answers.each do |answer| %>
+  <tr>
+    <td><%= answer.id %></td>
+    <td><%= answer.uid %></td>
+    <td><%= answer.type %></td>
+    <td><%= answer.version %></td>
+    <td><%= answer.author %></td>
+    <td><%= answer.run_id %></td>
+    <td><%= answer.answer %></td>
+    <td><%= link_to 'Show', answer %></td>
+    <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
+    <td><%= link_to 'Destroy', answer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Answer', new_answer_path %>

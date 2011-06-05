@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Question:</b>
+  <%= @allowed_question_tag.question_id %>
+</p>
+
+<p>
+  <b>Tag:</b>
+  <%= @allowed_question_tag.tag_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_allowed_question_tag_path(@allowed_question_tag) %> |
+<%= link_to 'Back', allowed_question_tags_path %>
