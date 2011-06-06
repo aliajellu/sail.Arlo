@@ -52,10 +52,10 @@ An HTTP version is also available and should "work", but it's certainly not prod
     Create
         method: POST
         url:    /<object>s
-        params: a JSON object eg: {"question":{"image_path":"http://some/address","correct_answer":"B"}}
+        params: a JSON object eg: {"question":{"image_path":"//some/address","correct_answer":"B"}}
 
         http:   /<object>s/create/new
-        eg:     /questions/create/new?question[image_path]=http://some/address&question[correct_answer]=B
+        eg:     /questions/create/new?question[image_path]=//some/address&question[correct_answer]=B
        
     Show
         method: GET
@@ -69,10 +69,10 @@ An HTTP version is also available and should "work", but it's certainly not prod
     Update
         method: PUT
         url:    /<object>s/<id>.json
-        params: JSON object eg: {"question":{"image_path":"http://some/address"}}
+        params: JSON object eg: {"question":{"image_path":"//some/address"}}
         
         http:   /<objects>s/update/<id>
-        eg:     /questions/update/3?question[image_path]=http://some/address
+        eg:     /questions/update/3?question[image_path]=//some/address
         
     Delete
         method: DELETE
