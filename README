@@ -90,7 +90,11 @@ An HTTP version is also available and should "work", but it's certainly not prod
         http:   /<object>s/new
         eg:     /questions/new
         
-        
+Query Interface
+------------------
+A simple GET to /query?query=<The Query in Ruby> will get you a resultset in JSON 
+
+eg: http://localhost:3000/query?query=Tag.all
         
         
         
