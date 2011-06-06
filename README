@@ -1,8 +1,6 @@
 Welcome to ARLO (Another Repository of Learning Objects)
 ==========================================================
 
-Written In Ruby on Rails 
-
 Common Fields of First-Class Objects
 -------------------------------------
 id (int)
@@ -13,6 +11,7 @@ author (string)
 run_id (int)
 created_at (timestamp)
 updated_at (timestamp)
+
 
 Current First-Class Objects
 -----------------------------
@@ -36,8 +35,70 @@ Answer
     - answer (string)
     - question_id (int)
 
+
 First-Class Objects Relations
 ------------------------------
 AnswerTag (joins Tag & Answer)
 
 AllowedQuestionTag (joins Tag and Question)
+
+
+RESTful API
+----------------
+Currently only the JSON interface of the RESTful API is available, so every URL should end with .json
+An XML version is in the testing phases. 
+An HTTP version is also available and should "work", but it's certainly not production-ready.
+
+    Create
+        method: POST
+        url:    /<object>s
+        params: a JSON object eg: {"question":{"image_path":"http://some/address","correct_answer":"B"}}
+
+        http:   /<object>s/create/new
+        eg:     /questions/create/new?question[image_path]=http://some/address&question[correct_answer]=B
+       
+    Show
+        method: GET
+        url:    
+        params: 
+        
+        http:   /<object>s/show/<id>.json
+                /<object>s/<id>.json
+        eg:     /questions/show/3.json
+        
+    Update
+        method: PUT
+        url:    /<object>s/<id>.json
+        params: JSON object eg: {"question":{"image_path":"http://some/address"}}
+        
+        http:   /<objects>s/update/<id>
+        eg:     /questions/update/3?question[image_path]=http://some/address
+        
+    Delete
+        method: DELETE
+        url:    /<object>s/<id>.json
+        params: -
+        
+        http:   /<object>s/destory/<id>
+        eg:     /questions/destroy/5
+        
+    New
+        method: GET
+        url:    /<object>s/new.json
+        params: -
+        
+        http:   /<object>s/new
+        eg:     /questions/new
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
