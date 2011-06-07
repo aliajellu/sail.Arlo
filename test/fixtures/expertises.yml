@@ -1,5 +1,5 @@
 dynamics:
-    id: 1
+    id: 7
     uid: 
     type: Expertise
     version: 1.0
@@ -8,7 +8,7 @@ dynamics:
     name: Dynamics
 
 energyAndMomentum:
-    id: 2
+    id: 8
     uid: 
     type: Expertise
     version: 1.0
@@ -17,7 +17,7 @@ energyAndMomentum:
     name: Energy, and Momentum
 
 fields:
-    id: 3
+    id: 9
     uid: 
     type: Expertise 
     version: 1.0
@@ -26,7 +26,7 @@ fields:
     name: Fields
     
 wavesAndLight:
-    id: 4
+    id: 10
     uid: 
     type: Expertise 
     version: 1.0
@@ -35,7 +35,7 @@ wavesAndLight:
     name: Waves and Light
     
 modern:
-    id: 5
+    id: 11
     uid: 
     type: Expertise 
     version: 1.0
