@@ -1,19 +1,350 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+f1:
+    id: 1
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Newton's 1st Law
 
-one:
-  id: 1
-  uid: 1
-  type: MyString
-  version: MyString
-  author: MyString
-  run_id: 1
-  name: MyString
+f2:
+    id: 2
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Newton's 2nd Law
 
-two:
-  id: 1
-  uid: 1
-  type: MyString
-  version: MyString
-  author: MyString
-  run_id: 1
-  name: MyString
+f3:
+    id: 3
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Newton's 3rd Law
+
+f4:
+    id: 4
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Acceleration
+        
+f5:
+    id: 5
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Kinetic Friction
+        
+f6:
+    id: 6
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Static Friction
+
+f7:
+    id: 7
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Fnet = 0
+
+f8:
+    id: 8
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Fnet = constant (non-zero)
+
+f9:
+    id: 9
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Fnet = non-constant
+
+f10:
+    id: 10
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Centripetal Force/Acceleration
+
+f11:
+    id: 11
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Kinetic Energy
+
+f12:
+    id: 12
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Potential Energy
+
+f13:
+    id: 13
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Elastic Energy
+
+f14:
+    id: 14
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Gravitational Energy
+
+f15:
+    id: 15
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Conservation of Energy
+
+f16:
+    id: 16
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Conservation of Momentum
+
+f17:
+    id: 17
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Electric Potential
+
+f18:
+    id: 18
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Electric Field
+
+f19:
+    id: 19
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Electric Energy
+
+f20:
+    id: 20
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Particle Theory of Light
+        
+f21:
+    id: 21
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Wave Theory in General
+
+f22:
+    id: 22
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Magnetic Field
+        
+f23:
+    id: 23
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Superposition
+
+f24:
+    id: 24
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Path Difference
+
+f25:
+    id: 25
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Refraction
+
+f26:
+    id: 26
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Partial Reflection/Partial Refraction
+
+f27:
+    id: 27
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Universal Wave Equation
+
+f28:
+    id: 28
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Photon Energy
+
+f29:
+    id: 29
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Photon as a Particle
+
+f30:
+    id: 30
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Particle as a wave
+
+f31:
+    id: 31
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Energy/Mass equivalence
+
+f32:
+    id: 32
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Uncertainty Principle
+        
+f33:
+    id: 33
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Time affected by speed
+
+f34:
+    id: 34
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Time affected by gravity
+
+f35:
+    id: 35
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Length affected by speed
+
+f36:
+    id: 36
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Mass affected by Speed
+
+f37:
+    id: 37
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Quantum Mechanics
+
+f38:
+    id: 38
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Frame of Reference
+    
+f39:
+    id: 39
+    uid: 
+    type: Tag
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Electromagnetic Spectrum

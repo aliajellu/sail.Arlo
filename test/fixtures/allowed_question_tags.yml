@@ -1,9 +1,30 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+<%
+num_expertise = 5
+num_questions_per_expertise = 7
+expertise_tag_map = {
+    1 => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+    2 => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+    3 => [1,2,3,4,7,8,9,10,11,12,13,14,15,16,17,18,19,],
+    4 => [1,2,3,15,16,17,18,20,21,22,24,25,26,27,28,39],
+    5 => [1,2,3,15,16,28,29,30,31,32,33,34,35,36,37,38]
+}
+count = 1
 
-one:
-  question_id: 1
-  tag_id: 1
+(1..num_expertise).each do |expertise_id|
+    tags_for_expertise = expertise_tag_map[expertise_id]
+    tags_for_expertise.each do |tag_id|
+        (1..num_questions_per_expertise).each do |question_num_in_expertise|
+            question_id = ((expertise_id-1)*num_questions_per_expertise + (question_num_in_expertise-1))+1
+%>
 
-two:
-  question_id: 1
-  tag_id: 1
+aqt<%=count%>:
+    id: <%=count%>
+    question_id: <%=question_id%>
+    tag_id: <%=tag_id%>
+      
+<%
+            count+=1
+        end
+    end
+end
+%>

@@ -1,19 +1,46 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+dynamics:
+    id: 1
+    uid: 
+    type: Expertise
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Dynamics
 
-one:
-  id: 1
-  uid: 1
-  type: MyString
-  version: MyString
-  author: MyString
-  run_id: 1
-  name: MyString
+energyAndMomentum:
+    id: 2
+    uid: 
+    type: Expertise
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Energy, and Momentum
 
-two:
-  id: 1
-  uid: 1
-  type: MyString
-  version: MyString
-  author: MyString
-  run_id: 1
-  name: MyString
+fields:
+    id: 3
+    uid: 
+    type: Expertise 
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Fields
+    
+wavesAndLight:
+    id: 4
+    uid: 
+    type: Expertise 
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Waves and Light
+    
+modern:
+    id: 5
+    uid: 
+    type: Expertise 
+    version: 1.0
+    author: system
+    run_id: 1
+    name: Modern
+
+

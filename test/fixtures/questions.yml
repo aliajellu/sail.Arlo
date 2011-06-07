@@ -1,23 +1,19 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+<% 
+num_questions = 35
+(1..num_questions).each do |question_id|
+%>
 
-one:
-  id: 1
-  uid: 1
-  type: MyString
-  version: MyString
-  author: MyString
-  run_id: 1
-  image_path: MyString
-  correct_answer: MyString
-  choice_limit: MyString
+q<%= question_id %>:
+    id: <%= question_id%>
+    uid: 
+    type: Question
+    version: 1.0
+    author: system
+    run_id: 1
+    image_path: /images/questions/Q<%=question_id%>.png
+    correct_answer: 
+    choice_limit:
 
-two:
-  id: 1
-  uid: 1
-  type: MyString
-  version: MyString
-  author: MyString
-  run_id: 1
-  image_path: MyString
-  correct_answer: MyString
-  choice_limit: MyString
+<%
+end
+%>
