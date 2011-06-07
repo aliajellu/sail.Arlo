@@ -19,7 +19,7 @@ q<%= question_id %>:
     image_path: /images/questions/Q<%=question_id%>.png
     correct_answer: <%=correct_answer%>
     expertise_id: <%=expertise_id%>
-    choice_limit: D
+    choice_limit: "['A','B','C','D']"
 
 <%
     end
