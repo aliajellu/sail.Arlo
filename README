@@ -97,7 +97,11 @@ A simple GET to /query?query=<The Query in Ruby> will get you a resultset in JSO
 eg: http://localhost:3000/query?query=Tag.all
         
         
-        
+To Run Data Fixtures
+----------------------
+go to project directory:
+rake db:fixtures:load
+
         
         
         
