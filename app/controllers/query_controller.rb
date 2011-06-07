@@ -12,8 +12,9 @@ class QueryController < ApplicationController
       format.any(:html, :xml, :json)  { 
         begin
           @query_results = eval(@query_string)
+          @query_results_count = @query_results.respond_to?(:count) ? @query_results.count : 1
           
-          response = {:status => :success, :query => @query_string, :count => @query_results.count, :payload => @query_results, }
+          response = {:status => :success, :query => @query_string, :count => @query_results_count, :payload => @query_results, }
           render @query_result_type.to_sym => response
         rescue Exception => e
           response = {:status => :error, :payload => e.to_s, :stack =>e.backtrace, :query => @query_string}
