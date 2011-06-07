@@ -1,8 +1,12 @@
 <% 
-num_questions = 35
+num_expertise = 5
+num_questions_per_expertise = 7
+
 correct_answers = ['B','C','D','C','D','C','A','A','B','B','D','C','D','C','D','A','A','A','A','A','A','C','D','C','D','D','A','A','C','C','A','D','D','C','B']
-(1..num_questions).each do |question_id|
-    correct_answer = correct_answers[question_id-1]
+(1..num_expertise).each do |expertise_id|
+    (1..num_questions_per_expertise).each do |question_num_in_expertise|
+        question_id = ((expertise_id-1)*num_questions_per_expertise + (question_num_in_expertise-1))+1
+        correct_answer = correct_answers[question_id-1]
 %>
 
 q<%= question_id %>:
@@ -14,8 +18,10 @@ q<%= question_id %>:
     run_id: 1
     image_path: /images/questions/Q<%=question_id%>.png
     correct_answer: <%=correct_answer%>
+    expertise_id: <%=expertise_id%>
     choice_limit: D
 
 <%
+    end
 end
 %>
